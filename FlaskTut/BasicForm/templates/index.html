@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Form</title>
+</head>
+<link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/style.css') }}">
+<script src = "{{ url_for('static', filename = 'script/script.js') }}"></script>
+<body>
+    <div class="container">
+        <h2>Result Form</h2>
+        <div class="form">
+            <form action = "/submit" method = 'post' onsubmit="showSubmitAlert()">
+            <label for = "English">English:</label><br>
+            <input type = "text" id = "eng" name = "eng" placeholder="0"><br>
+            <label for = "Bengali">Bengali:</label><br>
+            <input type = "text" id = "beng" name = "beng" placeholder="0"><br>
+            <label for = "Physics">Physics:</label><br>
+            <input type = "text" id = "phy" name = "phy" placeholder="0"><br>
+            <label for = "Chemistry">Chemistry:</label><br>
+            <input type = "text" id = "chem" name = "chem" placeholder="0"><br>
+            <label for = "Mathematics">Mathematics:</label><br>
+            <input type = "text" id = "maths" name = "maths" placeholder="0"><br>
+            <label for = "Data Science">Data Science:</label><br>
+            <input type = "text" id = "datasc" name = "datasc" placeholder="0"><br><br>
+            <input type = "submit" value = "Submit">
+            </form>
+        </div>
+        <p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p>
+    </div>
+    
+</body>
+</html>
